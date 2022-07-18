@@ -1,56 +1,56 @@
 {
-    "distancia":[
-        {
-            "id":1,
-            "clase":"invoker",
-            "arma":"Adspheras"
-        },
-        {
-            "id":2,
-            "clase":"phantasma",
-            "arma":"vediant"
-        },
-        {
-            "id":3,
-            "clase":"huntress",
-            "arma":"Srco"
-        },
-        {
-            "id":4,
-            "clase":"archmage",
-            "arma":"Baculo"
-        },
-        {
-            "id":5,
-            "clase":"Berserker",
-            "arma":"Espadon"
-        }
-    ],
-    "mele":[
-        {
-            "id":1,
-            "clase":"Solaris",
-            "elemento":"fuego"
-        },
-        {
-            "id":2,
-            "clase":"Striker",
-            "elemento":"fuego"
-        }, 
-        {
-            "id":3,
-            "clase":"Valkiria",
-            "elemento":"Viento"
-        },
-        {
-            "id":4,
-            "clase":"Mistic",
-            "elemento":"agua"
-        },
-        {
-            "id":5,
-            "clase":"Drakania",
-            "elemento":"Electricidad"
-        }
-    ]
+  "Distancia": [
+    {
+      "id": 1,
+      "clase": "Invoker",
+      "arma": "Adspheras"
+    },
+    {
+      "clase": "Phantasma",
+      "arma": "Espadas vediant",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "clase": "Huntress",
+      "arma": "Arco"
+    },
+    {
+      "id": 4,
+      "clase": "Archmage",
+      "arma": "Baculo"
+    },
+    {
+      "id": 5,
+      "clase": "Berserker",
+      "arma": "Espadon"
+    }
+  ],
+  "Mele": [
+    {
+      "id": 1,
+      "clase": "Solaris",
+      "elemento": "Fuego"
+    },
+    {
+      "id": 2,
+      "clase": "Striker",
+      "elemento": "Fuego"
+    },
+    {
+      "id": 3,
+      "clase": "Valkiria",
+      "elemento": "Viento"
+    },
+    {
+      "id": 4,
+      "clase": "Mistic",
+      "elemento": "Agua"
+    },
+    {
+      "id": 5,
+      "clase": "Drakania",
+      "elemento": "Electricidad"
+    }
+  ]
 }
