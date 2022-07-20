@@ -24,6 +24,11 @@
       "id": 5,
       "clase": "Berserker",
       "arma": "Espadon"
+    },
+    {
+      "clase": "Shai",
+      "arma": "boomerang",
+      "id": 6
     }
   ],
   "Mele": [

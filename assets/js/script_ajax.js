@@ -59,3 +59,27 @@ const getAllDistancia = () => {
 }
 
 d.addEventListener("DOMContentLoaded", getAllDistancia);
+
+d.addEventListener("submit", e=>{
+    
+    if(e.target === $form){
+        e.preventDefault();
+        if(!e.target.id.value){
+            //create-POST
+            ajax({
+                url: "http://localhost:3000/Distancia",
+                method: "POST",
+                success: (res) => location.reload(),
+                error: ()=>$form.insertAdjacentHTML("afterend", `<p><b>${err}</p></b>`),
+                data:{
+                    clase: e.target.nombre.value,
+                    arma: e.target.arma.value
+                }
+            });
+        }else{
+        
+            
+            //update--PUT
+        }
+    }
+});
