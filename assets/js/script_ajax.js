@@ -77,9 +77,39 @@ d.addEventListener("submit", e=>{
                 }
             });
         }else{
-        
-            
             //update--PUT
+            ajax({
+                url: `http://localhost:3000/Distancia/${e.target.id.value}`,
+                method: "PUT",
+                success: (res) => location.reload(),
+                error: ()=>$form.insertAdjacentHTML("afterend", `<p><b>${err}</p></b>`),
+                data:{
+                    clase: e.target.nombre.value,
+                    arma: e.target.arma.value
+                }
+            });
+        };
+    };
+});
+
+d.addEventListener("click", e=> {
+    if(e.target.matches(".edit")){
+        $title.textContent = "Editar Clase"
+        $form.nombre.value = e.target.dataset.clase;      
+        $form.arma.value = e.target.dataset.arma;      
+        $form.id.value = e.target.dataset.id;
+        
+    };
+    if(e.target.matches(".delete")){
+        let isDelete=confirm(`¿Esta seguro de eliminar el id ${e.target.dataset.id}`);
+        if(isDelete){
+            //delete--DELETE
+            ajax({
+                url: `http://localhost:3000/Distancia/${e.target.dataset.id}`,
+                method: "DELETE",
+                success: (res) => location.reload(),
+                error: ()=>alert(err)
+            });
         }
-    }
+    };
 });
